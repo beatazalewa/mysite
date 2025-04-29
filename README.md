@@ -166,9 +166,9 @@ python -m venv .mysite-venv
 ```
 4. __Note__: If you receive error message like this one: <span style="color: red;">.mysite-venv\Scripts\activate : File C:\Users\WDAGUtilityAccount\mysite\.mysite-venv\Scripts\Activate.ps1 cannot be loaded because running scripts is disabled on this system</span> run these commands:
 ```
-Set-ExecutionPolicy
+Get-ExecutionPolicy
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
-Set-ExecutionPolicy
+Get-ExecutionPolicy
 ```
 5.	Try to activate virtual environment using this command again:
 ```
